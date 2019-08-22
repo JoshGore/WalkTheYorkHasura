@@ -1,0 +1,8 @@
+- args:
+    sql: CREATE TABLE "public"."comments"("id" serial NOT NULL, "body" text NOT NULL,
+      PRIMARY KEY ("id") , UNIQUE ("id"));
+  type: run_sql
+- args:
+    name: comments
+    schema: public
+  type: add_existing_table_or_view

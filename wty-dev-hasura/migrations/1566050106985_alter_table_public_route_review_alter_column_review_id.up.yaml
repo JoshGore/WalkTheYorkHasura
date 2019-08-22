@@ -1,0 +1,10 @@
+- args:
+    sql: ALTER TABLE "public"."route_review" ALTER COLUMN "review_id" TYPE int4;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "public"."route_review" ADD CONSTRAINT "route_review_review_id_key"
+      UNIQUE ("review_id")
+  type: run_sql
+- args:
+    sql: COMMENT ON COLUMN "public"."route_review"."review_id" IS E''
+  type: run_sql

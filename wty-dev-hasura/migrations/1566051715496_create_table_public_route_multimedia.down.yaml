@@ -1,0 +1,3 @@
+- args:
+    sql: DROP TABLE "public"."route_multimedia"
+  type: run_sql

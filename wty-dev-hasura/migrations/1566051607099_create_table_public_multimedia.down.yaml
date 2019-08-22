@@ -1,0 +1,3 @@
+- args:
+    sql: DROP TABLE "public"."multimedia"
+  type: run_sql

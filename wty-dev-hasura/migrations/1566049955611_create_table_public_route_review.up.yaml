@@ -1,0 +1,9 @@
+- args:
+    sql: CREATE TABLE "public"."route_review"("review_id" integer, "route_id" integer,
+      PRIMARY KEY ("review_id","route_id") , FOREIGN KEY ("route_id") REFERENCES "public"."route"("id")
+      ON UPDATE restrict ON DELETE restrict);
+  type: run_sql
+- args:
+    name: route_review
+    schema: public
+  type: add_existing_table_or_view
