@@ -23,8 +23,8 @@ class User extends Model {
     return {
       'id': this.id,
       'username': this.username,
-      'firstName': this.firstName,
-      'lastName': this.lastName,
+      'firstname': this.firstname,
+      'lastname': this.lastname,
       'token': this.token
     }
   }
@@ -47,8 +47,8 @@ class User extends Model {
       properties: {
         id: {type: 'integer'},
         username: {type: 'string', minLength: 1, maxLength: 255},
-        firstName: {type: 'string', minLength: 1, maxLength: 255},
-        lastName: {type: 'string', minLength: 1, maxLength: 255},
+        firstname: {type: 'string', minLength: 1, maxLength: 255},
+        lastname: {type: 'string', minLength: 1, maxLength: 255},
         token: {type: 'string', minLength: 1, maxLength: 255}
       }
     }

@@ -31,8 +31,8 @@ exports.postLogin = async (req, res, next) => {
  * Create a new local account.
  */
 exports.postSignup = async (req, res, next) => {
-  req.assert('firstName', 'First Name is not valid').notEmpty();
-  req.assert('lastName', 'Last Name is not valid').notEmpty();
+  req.assert('firstname', 'First Name is not valid').notEmpty();
+  req.assert('lastname', 'Last Name is not valid').notEmpty();
   req.assert('username', 'Username is not valid').notEmpty();
   req.assert('password', 'Password must be at least 4 characters long').len(4);
   req.assert('confirmPassword', 'Passwords do not match').equals(req.body.password);
@@ -45,10 +45,10 @@ exports.postSignup = async (req, res, next) => {
 
   try {
     const user = await User.query()
-                           .allowInsert('[firstName, lastName, username, password]')
+                           .allowInsert('[firstname, lastname, username, password]')
                            .insert({
-                             firstName: req.body.firstName,
-                             lastName: req.body.lastName,
+                             firstName: req.body.firstname,
+                             lastName: req.body.lastname,
                              username: req.body.username,
                              password: req.body.password
                            });
