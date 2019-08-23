@@ -47,8 +47,8 @@ exports.postSignup = async (req, res, next) => {
     const user = await User.query()
                            .allowInsert('[firstname, lastname, username, password]')
                            .insert({
-                             firstName: req.body.firstname,
-                             lastName: req.body.lastname,
+                             firstname: req.body.firstname,
+                             lastname: req.body.lastname,
                              username: req.body.username,
                              password: req.body.password
                            });
