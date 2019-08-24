@@ -1,0 +1,12 @@
+- args:
+    sql: ALTER TABLE "public"."users" ALTER COLUMN "username" TYPE varchar;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "public"."users" ALTER COLUMN "username" SET NOT NULL;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "public"."users" ADD CONSTRAINT "users_username_key" UNIQUE ("username")
+  type: run_sql
+- args:
+    sql: COMMENT ON COLUMN "public"."users"."username" IS E''
+  type: run_sql
