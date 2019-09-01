@@ -1,0 +1,6 @@
+- args:
+    sql: "\n          alter table \"public\".\"route_comment\" drop constraint \"route_comment_comment_id_fkey\",\n
+      \         add constraint \"route_comment_comment_id_fkey\" \n          foreign
+      key (\"comment_id\") \n          references \"public\".\"comments\"\n          (\"id\")
+      \n          on update restrict\n          on delete restrict;\n        "
+  type: run_sql
