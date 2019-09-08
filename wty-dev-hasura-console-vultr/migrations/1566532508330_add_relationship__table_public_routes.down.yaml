@@ -1,0 +1,6 @@
+- args:
+    relationship: route_reviews
+    table:
+      name: routes
+      schema: public
+  type: drop_relationship

@@ -1,0 +1,13 @@
+- args:
+    name: route_extent
+    table:
+      name: routes_extent
+      schema: public
+    using:
+      manual_configuration:
+        column_mapping:
+          id: id
+        remote_table:
+          name: routes
+          schema: public
+  type: create_object_relationship

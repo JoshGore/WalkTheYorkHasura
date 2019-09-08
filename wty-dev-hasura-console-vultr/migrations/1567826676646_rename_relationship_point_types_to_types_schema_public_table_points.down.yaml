@@ -1,0 +1,7 @@
+- args:
+    name: types
+    new_name: point_types
+    table:
+      name: points
+      schema: public
+  type: rename_relationship

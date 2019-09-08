@@ -1,0 +1,9 @@
+- args:
+    sql: ALTER TABLE "public"."reviews" ALTER COLUMN "user_id" TYPE int4;
+  type: run_sql
+- args:
+    sql: ALTER TABLE "public"."reviews" ALTER COLUMN "user_id" DROP DEFAULT;
+  type: run_sql
+- args:
+    sql: COMMENT ON COLUMN "public"."reviews"."user_id" IS E''
+  type: run_sql

@@ -1,0 +1,3 @@
+- args:
+    sql: ALTER TABLE "public"."routes" DROP COLUMN "type_id" CASCADE
+  type: run_sql

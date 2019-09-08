@@ -1,0 +1,11 @@
+- args:
+    sql: CREATE TABLE "public"."route_file"("route_id" integer NOT NULL, "file_id"
+      integer NOT NULL, PRIMARY KEY ("route_id","file_id") , FOREIGN KEY ("route_id")
+      REFERENCES "public"."routes"("id") ON UPDATE restrict ON DELETE restrict, FOREIGN
+      KEY ("file_id") REFERENCES "public"."files"("id") ON UPDATE restrict ON DELETE
+      restrict);
+  type: run_sql
+- args:
+    name: route_file
+    schema: public
+  type: add_existing_table_or_view

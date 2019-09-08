@@ -1,0 +1,12 @@
+- args:
+    relationship: typeByType
+    table:
+      name: routes
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: routes
+    table:
+      name: types
+      schema: public
+  type: drop_relationship

@@ -1,0 +1,210 @@
+- args:
+    role: anonymous
+    table:
+      name: comments
+      schema: public
+  type: drop_select_permission
+- args:
+    permission:
+      allow_aggregations: false
+      columns: []
+      filter: {}
+      set: {}
+    role: anonymous
+    table:
+      name: comments
+      schema: public
+  type: create_select_permission
+- args:
+    role: anonymous
+    table:
+      name: files
+      schema: public
+  type: drop_select_permission
+- args:
+    permission:
+      allow_aggregations: false
+      columns:
+      - id
+      - name
+      - link
+      filter: {}
+    role: anonymous
+    table:
+      name: files
+      schema: public
+  type: create_select_permission
+- args:
+    role: anonymous
+    table:
+      name: line_route
+      schema: public
+  type: drop_select_permission
+- args:
+    permission:
+      allow_aggregations: false
+      columns: []
+      filter: {}
+      set: {}
+    role: anonymous
+    table:
+      name: line_route
+      schema: public
+  type: create_select_permission
+- args:
+    role: anonymous
+    table:
+      name: lines
+      schema: public
+  type: drop_select_permission
+- args:
+    permission:
+      allow_aggregations: false
+      columns: []
+      filter: {}
+      set: {}
+    role: anonymous
+    table:
+      name: lines
+      schema: public
+  type: create_select_permission
+- args:
+    permission:
+      allow_aggregations: false
+      columns: []
+      filter: {}
+      set: {}
+    role: anonymous
+    table:
+      name: line_type
+      schema: public
+  type: create_select_permission
+- args:
+    permission:
+      allow_aggregations: false
+      columns: []
+      filter: {}
+      set: {}
+    role: anonymous
+    table:
+      name: multimedia
+      schema: public
+  type: create_select_permission
+- args:
+    permission:
+      allow_aggregations: false
+      columns: []
+      filter: {}
+      set: {}
+    role: anonymous
+    table:
+      name: point_route
+      schema: public
+  type: create_select_permission
+- args:
+    permission:
+      allow_aggregations: false
+      columns: []
+      filter: {}
+      set: {}
+    role: anonymous
+    table:
+      name: points
+      schema: public
+  type: create_select_permission
+- args:
+    permission:
+      allow_aggregations: false
+      columns: []
+      filter: {}
+      set: {}
+    role: anonymous
+    table:
+      name: reviews
+      schema: public
+  type: create_select_permission
+- args:
+    permission:
+      allow_aggregations: false
+      columns: []
+      filter: {}
+      set: {}
+    role: anonymous
+    table:
+      name: route_comment
+      schema: public
+  type: create_select_permission
+- args:
+    permission:
+      allow_aggregations: false
+      columns: []
+      filter: {}
+      set: {}
+    role: anonymous
+    table:
+      name: route_file
+      schema: public
+  type: create_select_permission
+- args:
+    permission:
+      allow_aggregations: false
+      columns: []
+      filter: {}
+      set: {}
+    role: anonymous
+    table:
+      name: route_multimedia
+      schema: public
+  type: create_select_permission
+- args:
+    permission:
+      allow_aggregations: false
+      columns: []
+      filter: {}
+      set: {}
+    role: anonymous
+    table:
+      name: route_review
+      schema: public
+  type: create_select_permission
+- args:
+    permission:
+      allow_aggregations: false
+      columns: []
+      filter: {}
+      set: {}
+    role: anonymous
+    table:
+      name: routes
+      schema: public
+  type: create_select_permission
+- args:
+    permission:
+      allow_aggregations: false
+      columns: []
+      filter: {}
+      set: {}
+    role: anonymous
+    table:
+      name: types
+      schema: public
+  type: create_select_permission
+- args:
+    role: anonymous
+    table:
+      name: files
+      schema: public
+  type: drop_select_permission
+- args:
+    permission:
+      allow_aggregations: false
+      columns:
+      - id
+      - name
+      - link
+      filter: {}
+    role: anonymous
+    table:
+      name: files
+      schema: public
+  type: create_select_permission

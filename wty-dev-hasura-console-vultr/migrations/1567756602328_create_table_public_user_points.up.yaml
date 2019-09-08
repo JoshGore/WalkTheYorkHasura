@@ -1,0 +1,10 @@
+- args:
+    sql: CREATE TABLE "public"."user_points"("id" serial NOT NULL, "user_id" integer
+      NOT NULL, "type_id" integer NOT NULL, "name" text, "description" text, "geom"
+      geography NOT NULL, PRIMARY KEY ("id") , FOREIGN KEY ("type_id") REFERENCES
+      "public"."types"("id") ON UPDATE restrict ON DELETE restrict, UNIQUE ("id"));
+  type: run_sql
+- args:
+    name: user_points
+    schema: public
+  type: add_existing_table_or_view

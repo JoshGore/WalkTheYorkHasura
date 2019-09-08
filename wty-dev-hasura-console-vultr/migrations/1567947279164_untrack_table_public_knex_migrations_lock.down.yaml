@@ -1,0 +1,4 @@
+- args:
+    name: knex_migrations_lock
+    schema: public
+  type: add_existing_table_or_view

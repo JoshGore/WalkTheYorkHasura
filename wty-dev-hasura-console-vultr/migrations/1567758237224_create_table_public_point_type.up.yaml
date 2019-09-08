@@ -1,0 +1,11 @@
+- args:
+    sql: CREATE TABLE "public"."point_type"("point_id" integer NOT NULL, "type_id"
+      integer NOT NULL, PRIMARY KEY ("point_id","type_id") , FOREIGN KEY ("point_id")
+      REFERENCES "public"."points"("id") ON UPDATE restrict ON DELETE restrict, FOREIGN
+      KEY ("type_id") REFERENCES "public"."types"("id") ON UPDATE restrict ON DELETE
+      restrict);
+  type: run_sql
+- args:
+    name: point_type
+    schema: public
+  type: add_existing_table_or_view

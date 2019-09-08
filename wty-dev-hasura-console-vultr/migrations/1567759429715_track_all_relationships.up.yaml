@@ -1,0 +1,48 @@
+- args:
+    name: type
+    table:
+      name: point_type
+      schema: public
+    using:
+      foreign_key_constraint_on: type_id
+  type: create_object_relationship
+- args:
+    name: point
+    table:
+      name: point_type
+      schema: public
+    using:
+      foreign_key_constraint_on: point_id
+  type: create_object_relationship
+- args:
+    name: user_points
+    table:
+      name: types
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: type_id
+        table:
+          name: user_points
+          schema: public
+  type: create_array_relationship
+- args:
+    name: point_types
+    table:
+      name: types
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: type_id
+        table:
+          name: point_type
+          schema: public
+  type: create_array_relationship
+- args:
+    name: type
+    table:
+      name: user_points
+      schema: public
+    using:
+      foreign_key_constraint_on: type_id
+  type: create_object_relationship

@@ -1,0 +1,14 @@
+- args:
+    permission:
+      allow_aggregations: false
+      columns:
+      - id
+      - body
+      - created_at
+      filter: {}
+      limit: null
+    role: anonymous
+    table:
+      name: comments
+      schema: public
+  type: create_select_permission

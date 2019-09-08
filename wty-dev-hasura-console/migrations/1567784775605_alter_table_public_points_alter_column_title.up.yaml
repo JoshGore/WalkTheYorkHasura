@@ -1,0 +1,6 @@
+- args:
+    sql: COMMENT ON COLUMN "public"."points"."title" IS E''
+  type: run_sql
+- args:
+    sql: alter table "public"."points" rename column "title" to "name";
+  type: run_sql

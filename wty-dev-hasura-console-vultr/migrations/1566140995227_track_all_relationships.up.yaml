@@ -1,0 +1,80 @@
+- args:
+    name: route
+    table:
+      name: line_route
+      schema: public
+    using:
+      foreign_key_constraint_on: route_id
+  type: create_object_relationship
+- args:
+    name: line
+    table:
+      name: line_route
+      schema: public
+    using:
+      foreign_key_constraint_on: line_id
+  type: create_object_relationship
+- args:
+    name: line_routes
+    table:
+      name: lines
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: line_id
+        table:
+          name: line_route
+          schema: public
+  type: create_array_relationship
+- args:
+    name: route
+    table:
+      name: point_route
+      schema: public
+    using:
+      foreign_key_constraint_on: route_id
+  type: create_object_relationship
+- args:
+    name: point
+    table:
+      name: point_route
+      schema: public
+    using:
+      foreign_key_constraint_on: point_id
+  type: create_object_relationship
+- args:
+    name: point_routes
+    table:
+      name: points
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: point_id
+        table:
+          name: point_route
+          schema: public
+  type: create_array_relationship
+- args:
+    name: line_routes
+    table:
+      name: routes
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: route_id
+        table:
+          name: line_route
+          schema: public
+  type: create_array_relationship
+- args:
+    name: point_routes
+    table:
+      name: routes
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: route_id
+        table:
+          name: point_route
+          schema: public
+  type: create_array_relationship

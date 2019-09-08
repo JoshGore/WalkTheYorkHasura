@@ -1,0 +1,18 @@
+- args:
+    role: anonymous
+    table:
+      name: point_route
+      schema: public
+  type: drop_select_permission
+- args:
+    permission:
+      allow_aggregations: false
+      columns:
+      - point_id
+      - route_id
+      filter: {}
+    role: anonymous
+    table:
+      name: point_route
+      schema: public
+  type: create_select_permission

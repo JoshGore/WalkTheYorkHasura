@@ -1,0 +1,20 @@
+- args:
+    role: anonymous
+    table:
+      name: routes
+      schema: public
+  type: drop_select_permission
+- args:
+    permission:
+      allow_aggregations: false
+      columns:
+      - id
+      - title
+      - body
+      - short_title
+      filter: {}
+    role: anonymous
+    table:
+      name: routes
+      schema: public
+  type: create_select_permission

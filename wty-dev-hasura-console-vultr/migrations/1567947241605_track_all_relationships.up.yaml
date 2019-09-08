@@ -1,0 +1,442 @@
+- args:
+    name: comment
+    table:
+      name: comments
+      schema: public
+    using:
+      foreign_key_constraint_on: comment_id
+  type: create_object_relationship
+- args:
+    name: user
+    table:
+      name: comments
+      schema: public
+    using:
+      foreign_key_constraint_on: user_id
+  type: create_object_relationship
+- args:
+    name: route_comment
+    table:
+      name: comments
+      schema: public
+    using:
+      manual_configuration:
+        column_mapping:
+          id: comment_id
+        remote_table:
+          name: route_comment
+          schema: public
+  type: create_object_relationship
+- args:
+    name: comments
+    table:
+      name: comments
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: comment_id
+        table:
+          name: comments
+          schema: public
+  type: create_array_relationship
+- args:
+    name: route_files
+    table:
+      name: files
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: file_id
+        table:
+          name: route_file
+          schema: public
+  type: create_array_relationship
+- args:
+    name: line
+    table:
+      name: line_route
+      schema: public
+    using:
+      foreign_key_constraint_on: line_id
+  type: create_object_relationship
+- args:
+    name: route
+    table:
+      name: line_route
+      schema: public
+    using:
+      foreign_key_constraint_on: route_id
+  type: create_object_relationship
+- args:
+    name: line
+    table:
+      name: line_type
+      schema: public
+    using:
+      foreign_key_constraint_on: line_id
+  type: create_object_relationship
+- args:
+    name: type
+    table:
+      name: line_type
+      schema: public
+    using:
+      foreign_key_constraint_on: type_id
+  type: create_object_relationship
+- args:
+    name: line_routes
+    table:
+      name: lines
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: line_id
+        table:
+          name: line_route
+          schema: public
+  type: create_array_relationship
+- args:
+    name: line_types
+    table:
+      name: lines
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: line_id
+        table:
+          name: line_type
+          schema: public
+  type: create_array_relationship
+- args:
+    name: route_multimedia
+    table:
+      name: multimedia
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: multimedia_id
+        table:
+          name: route_multimedia
+          schema: public
+  type: create_array_relationship
+- args:
+    name: point
+    table:
+      name: point_route
+      schema: public
+    using:
+      foreign_key_constraint_on: point_id
+  type: create_object_relationship
+- args:
+    name: route
+    table:
+      name: point_route
+      schema: public
+    using:
+      foreign_key_constraint_on: route_id
+  type: create_object_relationship
+- args:
+    name: point
+    table:
+      name: point_type
+      schema: public
+    using:
+      foreign_key_constraint_on: point_id
+  type: create_object_relationship
+- args:
+    name: type
+    table:
+      name: point_type
+      schema: public
+    using:
+      foreign_key_constraint_on: type_id
+  type: create_object_relationship
+- args:
+    name: point_routes
+    table:
+      name: points
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: point_id
+        table:
+          name: point_route
+          schema: public
+  type: create_array_relationship
+- args:
+    name: point_types
+    table:
+      name: points
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: point_id
+        table:
+          name: point_type
+          schema: public
+  type: create_array_relationship
+- args:
+    name: user
+    table:
+      name: reviews
+      schema: public
+    using:
+      foreign_key_constraint_on: user_id
+  type: create_object_relationship
+- args:
+    name: route_review
+    table:
+      name: reviews
+      schema: public
+    using:
+      manual_configuration:
+        column_mapping:
+          id: review_id
+        remote_table:
+          name: route_review
+          schema: public
+  type: create_object_relationship
+- args:
+    name: comment
+    table:
+      name: route_comment
+      schema: public
+    using:
+      foreign_key_constraint_on: comment_id
+  type: create_object_relationship
+- args:
+    name: route
+    table:
+      name: route_comment
+      schema: public
+    using:
+      foreign_key_constraint_on: route_id
+  type: create_object_relationship
+- args:
+    name: file
+    table:
+      name: route_file
+      schema: public
+    using:
+      foreign_key_constraint_on: file_id
+  type: create_object_relationship
+- args:
+    name: route
+    table:
+      name: route_file
+      schema: public
+    using:
+      foreign_key_constraint_on: route_id
+  type: create_object_relationship
+- args:
+    name: multimedium
+    table:
+      name: route_multimedia
+      schema: public
+    using:
+      foreign_key_constraint_on: multimedia_id
+  type: create_object_relationship
+- args:
+    name: route
+    table:
+      name: route_multimedia
+      schema: public
+    using:
+      foreign_key_constraint_on: route_id
+  type: create_object_relationship
+- args:
+    name: review
+    table:
+      name: route_review
+      schema: public
+    using:
+      foreign_key_constraint_on: review_id
+  type: create_object_relationship
+- args:
+    name: route
+    table:
+      name: route_review
+      schema: public
+    using:
+      foreign_key_constraint_on: route_id
+  type: create_object_relationship
+- args:
+    name: route
+    table:
+      name: routes
+      schema: public
+    using:
+      foreign_key_constraint_on: route_id
+  type: create_object_relationship
+- args:
+    name: typeByType
+    table:
+      name: routes
+      schema: public
+    using:
+      foreign_key_constraint_on: type
+  type: create_object_relationship
+- args:
+    name: line_routes
+    table:
+      name: routes
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: route_id
+        table:
+          name: line_route
+          schema: public
+  type: create_array_relationship
+- args:
+    name: point_routes
+    table:
+      name: routes
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: route_id
+        table:
+          name: point_route
+          schema: public
+  type: create_array_relationship
+- args:
+    name: route_comments
+    table:
+      name: routes
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: route_id
+        table:
+          name: route_comment
+          schema: public
+  type: create_array_relationship
+- args:
+    name: route_files
+    table:
+      name: routes
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: route_id
+        table:
+          name: route_file
+          schema: public
+  type: create_array_relationship
+- args:
+    name: route_multimedia
+    table:
+      name: routes
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: route_id
+        table:
+          name: route_multimedia
+          schema: public
+  type: create_array_relationship
+- args:
+    name: route_reviews
+    table:
+      name: routes
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: route_id
+        table:
+          name: route_review
+          schema: public
+  type: create_array_relationship
+- args:
+    name: routes
+    table:
+      name: routes
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: route_id
+        table:
+          name: routes
+          schema: public
+  type: create_array_relationship
+- args:
+    name: line_types
+    table:
+      name: types
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: type_id
+        table:
+          name: line_type
+          schema: public
+  type: create_array_relationship
+- args:
+    name: point_types
+    table:
+      name: types
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: type_id
+        table:
+          name: point_type
+          schema: public
+  type: create_array_relationship
+- args:
+    name: routes
+    table:
+      name: types
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: type
+        table:
+          name: routes
+          schema: public
+  type: create_array_relationship
+- args:
+    name: user_points
+    table:
+      name: types
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: type_id
+        table:
+          name: user_points
+          schema: public
+  type: create_array_relationship
+- args:
+    name: type
+    table:
+      name: user_points
+      schema: public
+    using:
+      foreign_key_constraint_on: type_id
+  type: create_object_relationship
+- args:
+    name: comments
+    table:
+      name: users
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: user_id
+        table:
+          name: comments
+          schema: public
+  type: create_array_relationship
+- args:
+    name: reviews
+    table:
+      name: users
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: user_id
+        table:
+          name: reviews
+          schema: public
+  type: create_array_relationship

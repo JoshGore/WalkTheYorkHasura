@@ -1,0 +1,6 @@
+- args:
+    relationship: route_extent
+    table:
+      name: routes_extent
+      schema: public
+  type: drop_relationship

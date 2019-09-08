@@ -1,0 +1,11 @@
+- args:
+    sql: CREATE TABLE "public"."route_multimedia"("route_id" integer NOT NULL, "multimedia_id"
+      integer NOT NULL, PRIMARY KEY ("route_id","multimedia_id") , FOREIGN KEY ("route_id")
+      REFERENCES "public"."routes"("id") ON UPDATE restrict ON DELETE restrict, FOREIGN
+      KEY ("multimedia_id") REFERENCES "public"."multimedia"("id") ON UPDATE restrict
+      ON DELETE restrict);
+  type: run_sql
+- args:
+    name: route_multimedia
+    schema: public
+  type: add_existing_table_or_view

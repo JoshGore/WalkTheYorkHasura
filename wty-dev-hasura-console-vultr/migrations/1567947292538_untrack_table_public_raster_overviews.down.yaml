@@ -1,0 +1,4 @@
+- args:
+    name: raster_overviews
+    schema: public
+  type: add_existing_table_or_view

@@ -1,0 +1,13 @@
+- args:
+    permission:
+      allow_aggregations: false
+      columns:
+      - point_id
+      - type_id
+      filter: {}
+      limit: null
+    role: user
+    table:
+      name: point_type
+      schema: public
+  type: create_select_permission

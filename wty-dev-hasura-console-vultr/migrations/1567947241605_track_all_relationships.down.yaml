@@ -1,0 +1,264 @@
+- args:
+    relationship: comment
+    table:
+      name: comments
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: user
+    table:
+      name: comments
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: route_comment
+    table:
+      name: comments
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: comments
+    table:
+      name: comments
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: route_files
+    table:
+      name: files
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: line
+    table:
+      name: line_route
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: route
+    table:
+      name: line_route
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: line
+    table:
+      name: line_type
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: type
+    table:
+      name: line_type
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: line_routes
+    table:
+      name: lines
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: line_types
+    table:
+      name: lines
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: route_multimedia
+    table:
+      name: multimedia
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: point
+    table:
+      name: point_route
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: route
+    table:
+      name: point_route
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: point
+    table:
+      name: point_type
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: type
+    table:
+      name: point_type
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: point_routes
+    table:
+      name: points
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: point_types
+    table:
+      name: points
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: user
+    table:
+      name: reviews
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: route_review
+    table:
+      name: reviews
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: comment
+    table:
+      name: route_comment
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: route
+    table:
+      name: route_comment
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: file
+    table:
+      name: route_file
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: route
+    table:
+      name: route_file
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: multimedium
+    table:
+      name: route_multimedia
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: route
+    table:
+      name: route_multimedia
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: review
+    table:
+      name: route_review
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: route
+    table:
+      name: route_review
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: route
+    table:
+      name: routes
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: typeByType
+    table:
+      name: routes
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: line_routes
+    table:
+      name: routes
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: point_routes
+    table:
+      name: routes
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: route_comments
+    table:
+      name: routes
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: route_files
+    table:
+      name: routes
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: route_multimedia
+    table:
+      name: routes
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: route_reviews
+    table:
+      name: routes
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: routes
+    table:
+      name: routes
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: line_types
+    table:
+      name: types
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: point_types
+    table:
+      name: types
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: routes
+    table:
+      name: types
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: user_points
+    table:
+      name: types
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: type
+    table:
+      name: user_points
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: comments
+    table:
+      name: users
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: reviews
+    table:
+      name: users
+      schema: public
+  type: drop_relationship

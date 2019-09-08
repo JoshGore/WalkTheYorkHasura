@@ -1,0 +1,13 @@
+- args:
+    permission:
+      allow_aggregations: false
+      columns:
+      - id
+      - extent
+      filter: {}
+      limit: null
+    role: anonymous
+    table:
+      name: routes_extent
+      schema: public
+  type: create_select_permission

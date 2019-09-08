@@ -1,0 +1,10 @@
+- args:
+    sql: CREATE TABLE "public"."line_type"("line_id" integer NOT NULL, "type_id" integer
+      NOT NULL, PRIMARY KEY ("line_id","type_id") , FOREIGN KEY ("line_id") REFERENCES
+      "public"."lines"("id") ON UPDATE restrict ON DELETE restrict, FOREIGN KEY ("type_id")
+      REFERENCES "public"."types"("id") ON UPDATE restrict ON DELETE restrict);
+  type: run_sql
+- args:
+    name: line_type
+    schema: public
+  type: add_existing_table_or_view

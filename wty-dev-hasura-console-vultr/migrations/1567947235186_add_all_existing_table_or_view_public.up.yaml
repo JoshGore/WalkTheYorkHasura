@@ -1,0 +1,100 @@
+- args:
+    name: files
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: geography_columns
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: geometry_columns
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: knex_migrations
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: knex_migrations_lock
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: line_route
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: line_type
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: lines
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: multimedia
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: point_route
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: point_type
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: points
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: raster_columns
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: raster_overviews
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: reviews
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: route_comment
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: route_file
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: route_multimedia
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: route_review
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: routes
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: routes_extent
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: spatial_ref_sys
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: types
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: user_points
+    schema: public
+  type: add_existing_table_or_view
+- args:
+    name: users
+    schema: public
+  type: add_existing_table_or_view

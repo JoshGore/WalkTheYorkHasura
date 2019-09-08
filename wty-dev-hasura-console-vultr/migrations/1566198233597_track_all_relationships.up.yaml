@@ -1,0 +1,20 @@
+- args:
+    name: typeByType
+    table:
+      name: routes
+      schema: public
+    using:
+      foreign_key_constraint_on: type
+  type: create_object_relationship
+- args:
+    name: routes
+    table:
+      name: types
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: type
+        table:
+          name: routes
+          schema: public
+  type: create_array_relationship

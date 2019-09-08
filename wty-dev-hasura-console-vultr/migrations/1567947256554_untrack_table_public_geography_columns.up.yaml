@@ -1,0 +1,5 @@
+- args:
+    table:
+      name: geography_columns
+      schema: public
+  type: untrack_table
