@@ -1,4 +1,0 @@
-- args:
-    sql: "\n          alter table \"public\".\"routes\" drop constraint \"routes_type_fkey\"\n
-      \     "
-  type: run_sql

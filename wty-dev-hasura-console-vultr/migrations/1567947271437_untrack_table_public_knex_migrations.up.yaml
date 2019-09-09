@@ -1,5 +1,0 @@
-- args:
-    table:
-      name: knex_migrations
-      schema: public
-  type: untrack_table

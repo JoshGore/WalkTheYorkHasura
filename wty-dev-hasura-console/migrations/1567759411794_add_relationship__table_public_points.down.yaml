@@ -1,6 +1,0 @@
-- args:
-    relationship: point_types
-    table:
-      name: points
-      schema: public
-  type: drop_relationship

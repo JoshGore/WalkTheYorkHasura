@@ -1,6 +1,0 @@
-- args:
-    relationship: routes
-    table:
-      name: types
-      schema: public
-  type: drop_relationship

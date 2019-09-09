@@ -1,5 +1,0 @@
-- args:
-    table:
-      name: raster_columns
-      schema: public
-  type: untrack_table

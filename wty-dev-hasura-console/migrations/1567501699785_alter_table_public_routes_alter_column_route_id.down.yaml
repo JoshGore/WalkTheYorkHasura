@@ -1,9 +1,0 @@
-- args:
-    sql: ALTER TABLE "public"."routes" ALTER COLUMN "route_id" TYPE integer;
-  type: run_sql
-- args:
-    sql: ALTER TABLE "public"."routes" ALTER COLUMN "route_id" SET NOT NULL;
-  type: run_sql
-- args:
-    sql: COMMENT ON COLUMN "public"."routes"."route_id" IS E'null'
-  type: run_sql

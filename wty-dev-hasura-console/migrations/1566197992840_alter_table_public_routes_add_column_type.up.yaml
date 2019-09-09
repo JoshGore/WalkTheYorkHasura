@@ -1,4 +1,0 @@
-- args:
-    sql: ALTER TABLE "public"."routes" ADD COLUMN "type" integer NOT NULL DEFAULT
-      1;
-  type: run_sql

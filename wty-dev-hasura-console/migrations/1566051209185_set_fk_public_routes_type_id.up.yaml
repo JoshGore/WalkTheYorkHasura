@@ -1,6 +1,0 @@
-- args:
-    sql: "\n             alter table \"public\".\"routes\" drop constraint \"route_type_id_fkey\",\n
-      \            add constraint \"routes_type_id_fkey\" \n             foreign key
-      (\"type_id\") \n             references \"public\".\"types\"\n             (\"id\")
-      on update no action on delete no action;\n      "
-  type: run_sql

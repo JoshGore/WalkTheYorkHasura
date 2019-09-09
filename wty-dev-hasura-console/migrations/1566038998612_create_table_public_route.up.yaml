@@ -1,8 +1,0 @@
-- args:
-    sql: CREATE TABLE "public"."route"("id" serial NOT NULL, "title" text NOT NULL,
-      "body" text, PRIMARY KEY ("id") , UNIQUE ("id"));
-  type: run_sql
-- args:
-    name: route
-    schema: public
-  type: add_existing_table_or_view

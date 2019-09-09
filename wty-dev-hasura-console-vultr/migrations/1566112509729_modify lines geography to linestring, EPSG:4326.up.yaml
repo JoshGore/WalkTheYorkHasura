@@ -1,6 +1,0 @@
-- args:
-    cascade: false
-    sql: |-
-      ALTER TABLE lines
-      ALTER COLUMN geom TYPE GEOGRAPHY(LINESTRING, 4326)
-  type: run_sql

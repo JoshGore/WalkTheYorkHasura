@@ -1,4 +1,0 @@
-- args:
-    cascade: false
-    sql: ALTER TABLE user_points ALTER COLUMN geom TYPE GEOGRAPHY(POINT, 4326);
-  type: run_sql

@@ -1,6 +1,0 @@
-- args:
-    sql: ALTER TABLE "public"."routes" ADD COLUMN "type_id" int4
-  type: run_sql
-- args:
-    sql: ALTER TABLE "public"."routes" ALTER COLUMN "type_id" DROP NOT NULL
-  type: run_sql

@@ -1,5 +1,0 @@
-- args:
-    table:
-      name: comments
-      schema: public
-  type: untrack_table

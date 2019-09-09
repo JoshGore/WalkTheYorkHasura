@@ -1,6 +1,0 @@
-- args:
-    relationship: geom_extent
-    table:
-      name: routes_extent
-      schema: public
-  type: drop_relationship

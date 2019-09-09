@@ -1,6 +1,0 @@
-- args:
-    relationship: lines
-    table:
-      name: types
-      schema: public
-  type: drop_relationship

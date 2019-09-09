@@ -1,3 +1,0 @@
-- args:
-    sql: ALTER TABLE "public"."lines" DROP COLUMN "type_id" CASCADE
-  type: run_sql

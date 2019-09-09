@@ -1,6 +1,0 @@
-- args:
-    cascade: false
-    sql: "CREATE VIEW routes_extent AS\r\nSELECT routes.id, ST_AsGeoJson(ST_Extent(lines.geom::geometry))::json
-      AS extent FROM lines\r\nJOIN line_route ON line_route.line_id = lines.id\r\nJOIN
-      routes ON line_route.route_id = routes.id\r\nGROUP BY routes.id;"
-  type: run_sql

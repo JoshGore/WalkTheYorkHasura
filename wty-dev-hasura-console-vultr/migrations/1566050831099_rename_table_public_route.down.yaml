@@ -1,3 +1,0 @@
-- args:
-    sql: alter table "public"."routes" rename to "route";
-  type: run_sql

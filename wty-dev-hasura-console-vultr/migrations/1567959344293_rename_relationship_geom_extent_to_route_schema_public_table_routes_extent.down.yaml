@@ -1,7 +1,0 @@
-- args:
-    name: route
-    new_name: geom_extent
-    table:
-      name: routes_extent
-      schema: public
-  type: rename_relationship

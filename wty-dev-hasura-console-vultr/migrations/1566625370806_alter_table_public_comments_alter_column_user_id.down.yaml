@@ -1,9 +1,0 @@
-- args:
-    sql: ALTER TABLE "public"."comments" ALTER COLUMN "user_id" TYPE integer;
-  type: run_sql
-- args:
-    sql: ALTER TABLE "public"."comments" ALTER COLUMN "user_id" SET DEFAULT 6;
-  type: run_sql
-- args:
-    sql: COMMENT ON COLUMN "public"."comments"."user_id" IS E'null'
-  type: run_sql

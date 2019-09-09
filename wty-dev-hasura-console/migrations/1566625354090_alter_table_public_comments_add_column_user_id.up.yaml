@@ -1,4 +1,0 @@
-- args:
-    sql: ALTER TABLE "public"."comments" ADD COLUMN "user_id" integer NOT NULL DEFAULT
-      6;
-  type: run_sql

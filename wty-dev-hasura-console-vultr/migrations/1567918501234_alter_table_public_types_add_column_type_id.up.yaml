@@ -1,3 +1,0 @@
-- args:
-    sql: ALTER TABLE "public"."types" ADD COLUMN "type_id" integer NULL;
-  type: run_sql

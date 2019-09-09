@@ -1,3 +1,0 @@
-- args:
-    sql: ALTER TABLE "public"."route" ADD COLUMN "short_title" text NULL;
-  type: run_sql

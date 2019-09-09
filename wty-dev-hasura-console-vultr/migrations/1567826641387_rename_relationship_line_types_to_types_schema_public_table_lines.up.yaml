@@ -1,7 +1,0 @@
-- args:
-    name: line_types
-    new_name: types
-    table:
-      name: lines
-      schema: public
-  type: rename_relationship

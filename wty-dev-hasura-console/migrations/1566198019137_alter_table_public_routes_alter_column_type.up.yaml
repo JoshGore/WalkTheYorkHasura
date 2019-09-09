@@ -1,9 +1,0 @@
-- args:
-    sql: ALTER TABLE "public"."routes" ALTER COLUMN "type" TYPE int4;
-  type: run_sql
-- args:
-    sql: ALTER TABLE "public"."routes" ALTER COLUMN "type" DROP DEFAULT;
-  type: run_sql
-- args:
-    sql: COMMENT ON COLUMN "public"."routes"."type" IS E''
-  type: run_sql

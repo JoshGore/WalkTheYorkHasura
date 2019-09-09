@@ -1,5 +1,0 @@
-- args:
-    table:
-      name: raster_overviews
-      schema: public
-  type: untrack_table
