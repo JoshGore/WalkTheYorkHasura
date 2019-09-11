@@ -1,0 +1,4 @@
+- args:
+    sql: ALTER TABLE "public"."user_points" ADD COLUMN "date_created" timestamptz
+      NOT NULL;
+  type: run_sql
