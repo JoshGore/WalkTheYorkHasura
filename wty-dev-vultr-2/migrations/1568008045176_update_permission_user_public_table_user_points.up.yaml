@@ -1,0 +1,20 @@
+- args:
+    permission:
+      allow_upsert: true
+      check: {}
+      columns:
+      - geom
+      - id
+      - type_id
+      - user_id
+      - description
+      - name
+      localPresets:
+      - key: ""
+        value: ""
+      set: {}
+    role: user
+    table:
+      name: user_points
+      schema: public
+  type: create_insert_permission

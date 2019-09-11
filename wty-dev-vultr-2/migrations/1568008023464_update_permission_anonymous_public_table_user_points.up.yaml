@@ -1,0 +1,17 @@
+- args:
+    permission:
+      allow_aggregations: false
+      columns:
+      - geom
+      - id
+      - type_id
+      - user_id
+      - description
+      - name
+      filter: {}
+      limit: null
+    role: anonymous
+    table:
+      name: user_points
+      schema: public
+  type: create_select_permission
