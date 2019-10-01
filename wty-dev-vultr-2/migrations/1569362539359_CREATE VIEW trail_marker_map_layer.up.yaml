@@ -1,0 +1,13 @@
+- args:
+    cascade: false
+    sql: "CREATE VIEW trail_maker_map_layer AS\r\n    SELECT points.id AS id, ST_AsBinary(geom::geometry)
+      AS geom, points.name, routes.id AS trail_id FROM points\r\n    JOIN point_type
+      ON point_type.point_id = points.id\r\n    JOIN types ON point_type.type_id =
+      types.id\r\n    JOIN point_route ON point_route.point_id = points.id\r\n    JOIN
+      routes ON point_route.route_id = routes.id\r\n    WHERE types.id = 7 AND routes.type
+      = 5"
+  type: run_sql
+- args:
+    name: trail_maker_map_layer
+    schema: public
+  type: add_existing_table_or_view

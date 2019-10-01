@@ -1,0 +1,6 @@
+- args:
+    sql: "\n           alter table \"public\".\"comments\"\n           add constraint
+      \"comments_type_id_fkey\" \n           foreign key (\"type_id\") \n           references
+      \"public\".\"types\"\n           (\"id\") on update cascade on delete set null;\n
+      \     "
+  type: run_sql

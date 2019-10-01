@@ -1,0 +1,4 @@
+- args:
+    cascade: false
+    sql: ALTER VIEW trail_maker_map_layer RENAME TO trail_marker_map_layer
+  type: run_sql

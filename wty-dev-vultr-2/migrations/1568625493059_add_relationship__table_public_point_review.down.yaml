@@ -1,0 +1,6 @@
+- args:
+    relationship: review
+    table:
+      name: point_review
+      schema: public
+  type: drop_relationship

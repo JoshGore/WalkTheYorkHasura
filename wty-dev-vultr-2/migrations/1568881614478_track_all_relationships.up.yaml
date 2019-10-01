@@ -1,0 +1,40 @@
+- args:
+    name: user_point_reviews
+    table:
+      name: reviews
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: review_id
+        table:
+          name: user_point_review
+          schema: public
+  type: create_array_relationship
+- args:
+    name: user_point
+    table:
+      name: user_point_review
+      schema: public
+    using:
+      foreign_key_constraint_on: user_point_id
+  type: create_object_relationship
+- args:
+    name: review
+    table:
+      name: user_point_review
+      schema: public
+    using:
+      foreign_key_constraint_on: review_id
+  type: create_object_relationship
+- args:
+    name: user_point_reviews
+    table:
+      name: user_points
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: user_point_id
+        table:
+          name: user_point_review
+          schema: public
+  type: create_array_relationship

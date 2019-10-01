@@ -1,0 +1,6 @@
+- args:
+    sql: "\n          alter table \"public\".\"comments\" drop constraint \"comments_comment_id_fkey\",\n
+      \         add constraint \"comments_comment_id_fkey\" \n          foreign key
+      (\"comment_id\") \n          references \"public\".\"comments\"\n          (\"id\")
+      \n          on update set null\n          on delete set null;\n        "
+  type: run_sql

@@ -1,0 +1,6 @@
+- args:
+    sql: "\n          alter table \"public\".\"route_review\" drop constraint \"route_review_route_id_fkey\",\n
+      \         add constraint \"route_review_route_id_fkey\" \n          foreign
+      key (\"route_id\") \n          references \"public\".\"routes\"\n          (\"id\")
+      \n          on update restrict\n          on delete restrict;\n        "
+  type: run_sql

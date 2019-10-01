@@ -1,0 +1,12 @@
+- args:
+    name: point_reviews
+    table:
+      name: points
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: point_id
+        table:
+          name: point_review
+          schema: public
+  type: create_array_relationship

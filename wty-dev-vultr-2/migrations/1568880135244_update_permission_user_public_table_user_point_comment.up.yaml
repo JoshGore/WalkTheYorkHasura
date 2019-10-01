@@ -1,0 +1,13 @@
+- args:
+    permission:
+      allow_aggregations: false
+      columns:
+      - comment_id
+      - user_point_id
+      filter: {}
+      limit: null
+    role: user
+    table:
+      name: user_point_comment
+      schema: public
+  type: create_select_permission

@@ -1,0 +1,12 @@
+- args:
+    relationship: user_point_comments
+    table:
+      name: comments
+      schema: public
+  type: drop_relationship
+- args:
+    relationship: user_point_comments
+    table:
+      name: user_points
+      schema: public
+  type: drop_relationship

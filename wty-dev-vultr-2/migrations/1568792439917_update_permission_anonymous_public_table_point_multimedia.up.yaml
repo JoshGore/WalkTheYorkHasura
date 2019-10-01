@@ -1,0 +1,13 @@
+- args:
+    permission:
+      allow_aggregations: false
+      columns:
+      - multimedia_id
+      - point_id
+      filter: {}
+      limit: null
+    role: anonymous
+    table:
+      name: point_multimedia
+      schema: public
+  type: create_select_permission

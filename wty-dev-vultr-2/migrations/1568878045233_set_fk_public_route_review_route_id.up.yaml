@@ -1,0 +1,6 @@
+- args:
+    sql: "\n             alter table \"public\".\"route_review\" drop constraint \"route_review_route_id_fkey\",\n
+      \            add constraint \"route_review_route_id_fkey\" \n             foreign
+      key (\"route_id\") \n             references \"public\".\"routes\"\n             (\"id\")
+      on update cascade on delete cascade;\n      "
+  type: run_sql

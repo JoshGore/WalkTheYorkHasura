@@ -1,0 +1,24 @@
+- args:
+    name: user_point_comments
+    table:
+      name: comments
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: comment_id
+        table:
+          name: user_point_comment
+          schema: public
+  type: create_array_relationship
+- args:
+    name: user_point_comments
+    table:
+      name: user_points
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: user_point_id
+        table:
+          name: user_point_comment
+          schema: public
+  type: create_array_relationship

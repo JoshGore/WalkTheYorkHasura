@@ -1,0 +1,12 @@
+- args:
+    cascade: false
+    sql: "CREATE VIEW information_sign_map_layer AS\r\nSELECT points.id AS id, ST_AsBinary(geom::geometry)
+      AS geom, points.name, routes.id AS trail_id FROM points\r\nJOIN point_type ON
+      point_type.point_id = points.id\r\nJOIN types ON point_type.type_id = types.id\r\nJOIN
+      point_route ON point_route.point_id = points.id\r\nJOIN routes ON point_route.route_id
+      = routes.id\r\nWHERE types.id = 11 AND routes.type = 5"
+  type: run_sql
+- args:
+    name: information_sign_map_layer
+    schema: public
+  type: add_existing_table_or_view

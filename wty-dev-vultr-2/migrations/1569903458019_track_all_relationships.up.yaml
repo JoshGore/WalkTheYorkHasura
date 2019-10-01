@@ -1,0 +1,20 @@
+- args:
+    name: type
+    table:
+      name: comments
+      schema: public
+    using:
+      foreign_key_constraint_on: type_id
+  type: create_object_relationship
+- args:
+    name: comments
+    table:
+      name: types
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: type_id
+        table:
+          name: comments
+          schema: public
+  type: create_array_relationship

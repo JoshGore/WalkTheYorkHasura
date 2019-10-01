@@ -1,0 +1,7 @@
+- args:
+    sql: "\n          alter table \"public\".\"user_point_review\" drop constraint
+      \"user_point_review_review_id_fkey\",\n          add constraint \"user_point_review_review_id_fkey\"
+      \n          foreign key (\"review_id\") \n          references \"public\".\"reviews\"\n
+      \         (\"id\") \n          on update cascade\n          on delete cascade;\n
+      \       "
+  type: run_sql

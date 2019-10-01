@@ -1,0 +1,13 @@
+- args:
+    cascade: false
+    sql: "DROP VIEW trail_stage_map_layer;\nCREATE VIEW trail_stage_map_layer AS\n
+      \   SELECT lines.id, geom::geometry AS geom, types.name AS use, routes.id AS
+      route_id, routes.route_id as trail_id FROM lines \n    JOIN line_type ON line_type.line_id
+      = lines.id\n    JOIN types ON types.id = line_type.type_id\n    JOIN line_route
+      ON line_route.line_id = lines.id\n    JOIN routes ON line_route.route_id = routes.id
+      WHERE routes.type = 1;"
+  type: run_sql
+- args:
+    name: trail_stage_map_layer
+    schema: public
+  type: add_existing_table_or_view

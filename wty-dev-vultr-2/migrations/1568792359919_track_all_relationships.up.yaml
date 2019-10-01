@@ -1,0 +1,40 @@
+- args:
+    name: point_multimedia
+    table:
+      name: multimedia
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: multimedia_id
+        table:
+          name: point_multimedia
+          schema: public
+  type: create_array_relationship
+- args:
+    name: point
+    table:
+      name: point_multimedia
+      schema: public
+    using:
+      foreign_key_constraint_on: point_id
+  type: create_object_relationship
+- args:
+    name: multimedium
+    table:
+      name: point_multimedia
+      schema: public
+    using:
+      foreign_key_constraint_on: multimedia_id
+  type: create_object_relationship
+- args:
+    name: point_multimedia
+    table:
+      name: points
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: point_id
+        table:
+          name: point_multimedia
+          schema: public
+  type: create_array_relationship

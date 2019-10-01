@@ -1,0 +1,16 @@
+- args:
+    cascade: false
+    sql: |-
+      DROP VIEW trail_marker_map_layer;
+      CREATE VIEW trail_marker_map_layer AS
+          SELECT points.id AS id, geom::geometry AS geom, points.name, routes.id AS trail_id FROM points
+          JOIN point_type ON point_type.point_id = points.id
+          JOIN types ON point_type.type_id = types.id
+          JOIN point_route ON point_route.point_id = points.id
+          JOIN routes ON point_route.route_id = routes.id
+          WHERE types.id = 7 AND routes.type = 5;
+  type: run_sql
+- args:
+    name: trail_marker_map_layer
+    schema: public
+  type: add_existing_table_or_view

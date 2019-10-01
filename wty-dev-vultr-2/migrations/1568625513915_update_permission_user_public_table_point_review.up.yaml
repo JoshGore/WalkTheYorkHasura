@@ -1,0 +1,13 @@
+- args:
+    permission:
+      allow_aggregations: false
+      columns:
+      - point_id
+      - review_id
+      filter: {}
+      limit: null
+    role: user
+    table:
+      name: point_review
+      schema: public
+  type: create_select_permission

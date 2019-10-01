@@ -1,0 +1,19 @@
+- args:
+    permission:
+      allow_aggregations: false
+      columns:
+      - id
+      - geom
+      - parent_type_id
+      - type_id
+      - type
+      - user_id
+      - name
+      - updated_at
+      filter: {}
+      limit: null
+    role: anonymous
+    table:
+      name: user_point_map_layer
+      schema: public
+  type: create_select_permission
